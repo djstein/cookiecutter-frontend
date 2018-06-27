@@ -1,0 +1,48 @@
+Arguments: 
+  /usr/local/Cellar/node/10.3.0/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js add babel-preset-env
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/kwm/bin:/usr/local/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  10.3.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/dylan/git/cookiecutter-react/{{cookiecutter.project_slug}}/package.json: Unexpected token } in JSON at position 491
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:109:13
+
+npm manifest: 
+  {
+    "name": "{{cookiecutter.project_name}}",
+    "version": "0.0.1",
+    "description": "{{cookiecutter.description}}",
+    "main": "app/index.js",
+    "repository": "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}",
+    "author": "{{cookiecutter.author}}",
+    "license": "{{cookiecutter.license}}",
+    "private": false,
+    "scripts": {
+      "start": "parcel app/index.html",
+      "build": "parcel build app/index.js"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
