@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/10.3.0/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js add babel-preset-env
+  /usr/local/Cellar/node/10.3.0/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js build
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/kwm/bin:/usr/local/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/dylan/git/cookiecutter-react/{{cookiecutter.project_slug}}/package.json: Unexpected token } in JSON at position 491
+  SyntaxError: /Users/dylan/git/cookiecutter-react/{{cookiecutter.project_slug}}/package.json: Unexpected token } in JSON at position 784
       at JSON.parse (<anonymous>)
       at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:1130:59
       at Generator.next (<anonymous>)
@@ -36,8 +36,21 @@ npm manifest:
       "build": "parcel build app/index.js"
     },
     "dependencies": {
-    },
+      "es6-promise": "^4.2.4",
+      "js-cookie": "^2.2.0",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "react-redux": "^5.0.7",
+      "react-router-dom": "^4.2.2",
+      "redux": "^3.7.2",
+      "redux-api-middleware": "^2.3.0",
+      "redux-logger": "^3.0.6",
+      "redux-thunk": "^2.2.0",
+      "styled-components": "^3.2.3",
+  },
     "devDependencies": {
+      "axios": "^0.18.0",
+      "babel-preset-env": "^1.6.1",
     },
   }
 
