@@ -5,7 +5,7 @@
   "description": "A React Project",
   "author_name": "Dylan Stein",
   "domain_name": "example.com",
-  "github_org": "djstein",
+  "github_user": "djstein",
   "email": "{{ cookiecutter.author_name.lower()|replace(' ', '-') }}@ncsu.edu",
   "open_source_license": [
     "MIT",
