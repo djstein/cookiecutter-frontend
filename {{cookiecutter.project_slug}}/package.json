@@ -4,7 +4,7 @@
   "description": "{{cookiecutter.description}}",
   "main": "app/index.js",
   "repository": "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}",
-  "author": "{{cookiecutter.author}}",
+  "author": "{{cookiecutter.author_name}}",
   "license": "{{cookiecutter.license}}",
   "private": false,
   "scripts": {
