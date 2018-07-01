@@ -11,6 +11,17 @@
     "start": "parcel app/index.html",
     "build": "parcel build app/index.js"
   },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint:eslint:fix",
+      "git add --force"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add --force"
+    ]
+  },
+  "pre-commit": "lint:staged",
   "dependencies": {
     "es6-promise": "^4.2.4",
     "js-cookie": "^2.2.0",

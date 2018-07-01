@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - 10
+
+script:
+  - yarn build
+
+notifications:
+  email:
+    on_failure: change
+
+after_success: 'yarn coveralls'
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
