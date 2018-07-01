@@ -22,20 +22,83 @@
     ]
   },
   "pre-commit": "lint:staged",
+  "babel": {
+    "plugins": [
+      "styled-components"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false
+        }
+      ],
+      "react",
+      "stage-0"
+    ],
+    "env": {
+      "production": {
+        "only": [
+          "app"
+        ],
+        "plugins": [
+          "transform-react-remove-prop-types",
+          "transform-react-inline-elements",
+          "transform-react-constant-elements"
+        ]
+      },
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs",
+          "dynamic-import-node"
+        ]
+      }
+    }
+  },
   "dependencies": {
-    "es6-promise": "^4.2.4",
+    "babel-polyfill": "6.26.0",
+    "compression": "1.7.2",
+    "connected-react-router": "4.3.0",
+    "immutable": "3.8.2",
     "js-cookie": "^2.2.0",
+    "prop-types": "15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-helmet": "5.2.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
+    "redux-immutable": "4.0.0",
     "redux-api-middleware": "^2.3.0",
     "redux-thunk": "^2.2.0",
     "styled-components": "^3.2.3",
 },
   "devDependencies": {
-    "axios": "^0.18.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-eslint": "8.2.3",
+    "babel-loader": "7.1.4",
+    "babel-plugin-dynamic-import-node": "1.2.0",
+    "babel-plugin-react-intl": "2.4.0",
+    "babel-plugin-react-transform": "3.0.0",
+    "babel-plugin-styled-components": "1.5.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
+    "babel-plugin-transform-react-constant-elements": "6.23.0",
+    "babel-plugin-transform-react-inline-elements": "6.22.0",
+    "babel-plugin-transform-react-jsx-source": "6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.13",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "coveralls": "3.0.1",
+    "eslint": "4.19.1",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-prettier": "2.6.0",
+    "eslint-plugin-react": "7.9.1",
+    "parcel": "1.9.3",
+    "pre-commit": "1.2.2",
+    "prettier": "1.13.5",
   },
 }
