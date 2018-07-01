@@ -1,8 +1,8 @@
 {
-  "project_name": "Storybook",
+  "project_name": "React App",
   "project_slug":
     "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
-  "description": "Storybook",
+  "description": "A React Project",
   "author_name": "Dylan Stein",
   "domain_name": "example.com",
   "github_org": "djstein",
