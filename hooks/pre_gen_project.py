@@ -1,1 +1,2 @@
-pre_gen_project.py
+def pre_gen_project():
+  pass
