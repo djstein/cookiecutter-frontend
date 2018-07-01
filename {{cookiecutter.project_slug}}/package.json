@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "{{cookiecutter.description}}",
   "main": "app/index.js",
-  "repository": "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}",
+  "repository":
+    "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}",
   "author": "{{cookiecutter.author_name}}",
   "license": "{{cookiecutter.open_source_license}}",
   "private": false,
@@ -12,20 +13,12 @@
     "build": "parcel build app/index.js"
   },
   "lint-staged": {
-    "*.js": [
-      "yarn lint:eslint:fix",
-      "git add --force"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add --force"
-    ]
+    "*.js": ["yarn lint:eslint:fix", "git add --force"],
+    "*.json": ["prettier --write", "git add --force"]
   },
   "pre-commit": "lint:staged",
   "babel": {
-    "plugins": [
-      "styled-components"
-    ],
+    "plugins": ["styled-components"],
     "presets": [
       [
         "env",
@@ -38,9 +31,7 @@
     ],
     "env": {
       "production": {
-        "only": [
-          "app"
-        ],
+        "only": ["app"],
         "plugins": [
           "transform-react-remove-prop-types",
           "transform-react-inline-elements",
@@ -48,10 +39,7 @@
         ]
       },
       "test": {
-        "plugins": [
-          "transform-es2015-modules-commonjs",
-          "dynamic-import-node"
-        ]
+        "plugins": ["transform-es2015-modules-commonjs", "dynamic-import-node"]
       }
     }
   },
@@ -71,8 +59,8 @@
     "redux-immutable": "4.0.0",
     "redux-api-middleware": "^2.3.0",
     "redux-thunk": "^2.2.0",
-    "styled-components": "^3.2.3",
-},
+    "styled-components": "^3.2.3"
+  },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
@@ -99,6 +87,6 @@
     "eslint-plugin-react": "7.9.1",
     "parcel": "1.9.3",
     "pre-commit": "1.2.2",
-    "prettier": "1.13.5",
-  },
+    "prettier": "1.13.5"
+  }
 }
