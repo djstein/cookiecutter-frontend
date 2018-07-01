@@ -9,8 +9,8 @@
   "license": "{{cookiecutter.open_source_license}}",
   "private": false,
   "scripts": {
-    "start": "parcel app/index.html",
-    "build": "parcel build app/index.js"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.js"
   },
   "lint-staged": {
     "*.js": ["yarn lint:eslint:fix", "git add --force"],
