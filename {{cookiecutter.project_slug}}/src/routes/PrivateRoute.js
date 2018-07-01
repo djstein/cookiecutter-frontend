@@ -5,11 +5,6 @@ import { connect } from 'react-redux'
 import { push } from 'react-router-redux'
 
 class PrivateRoute extends React.Component {
-  static propTypes = {
-    dispatch: PropTypes.func.isRequired,
-    user: PropTypes.object.isRequired,
-  }
-
   render() {
     const { path, Layout, Component, exact, dispatch, user } = this.props
     if (Object.keys(user).length === 0) {
@@ -32,8 +27,14 @@ class PrivateRoute extends React.Component {
   }
 }
 
-function mapStateToProps(state, ownProps) {
+mapStateToProps = (state, ownProps) => {
   const user = state.user
   return { user }
 }
+
+PrivateRoute.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+  user: PropTypes.object.isRequired,
+}
+
 export default connect(mapStateToProps)(PrivateRoute)
