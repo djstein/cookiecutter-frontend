@@ -4,7 +4,7 @@
   "description": "{{cookiecutter.description}}",
   "repository": {
     "type": "git",
-    "url": "git://github.com/{{cookiecutter.github_user}}/{{cookiecutter.github_repo}}.git"
+    "url": "git://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}.git"
   },
   "engines": {
     "npm": ">=5",

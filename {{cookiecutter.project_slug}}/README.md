@@ -6,20 +6,20 @@
 
 <div align="center">
   <!-- Dependency Status -->
-  <a href="https://david-dm.org/{{cookiecutter.github_user}}/{{cookiecutter.github_repo}}">
-    <img src="https://david-dm.org/{{cookiecutter.github_user}}/{{cookiecutter.github_repo}}.svg" alt="Dependency Status" />
+  <a href="https://david-dm.org/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}">
+    <img src="https://david-dm.org/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}.svg" alt="Dependency Status" />
   </a>
   <!-- devDependency Status -->
-  <a href="https://david-dm.org/{{cookiecutter.github_user}}/{{cookiecutter.github_repo}}#info=devDependencies">
-    <img src="https://david-dm.org/{{cookiecutter.github_user}}/{{cookiecutter.github_repo}}/dev-status.svg" alt="devDependency Status" />
+  <a href="https://david-dm.org/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}#info=devDependencies">
+    <img src="https://david-dm.org/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}/dev-status.svg" alt="devDependency Status" />
   </a>
   <!-- Build Status -->
-  <a href="https://travis-ci.org/{{cookiecutter.github_user}}/{{cookiecutter.github_repo}}">
-    <img src="https://travis-ci.org/{{cookiecutter.github_user}}/{{cookiecutter.github_repo}}.svg" alt="Build Status" />
+  <a href="https://travis-ci.org/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}">
+    <img src="https://travis-ci.org/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}.svg" alt="Build Status" />
   </a>
   <!-- Test Coverage -->
-  <a href="https://coveralls.io/r/{{cookiecutter.github_user}}/{{cookiecutter.github_repo}}">
-    <img src="https://coveralls.io/repos/github/{{cookiecutter.github_user}}/{{cookiecutter.github_repo}}/badge.svg" alt="Test Coverage" />
+  <a href="https://coveralls.io/r/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}">
+    <img src="https://coveralls.io/repos/github/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}/badge.svg" alt="Test Coverage" />
   </a>
 </div>
 
@@ -28,7 +28,7 @@
 ## Quick start
 
 1.  Make sure that you have Node v8 or above installed.
-2.  Clone this repo using `git clone --depth=1 https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.github_repo}}.git`
+2.  Clone this repo using `git clone --depth=1 https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_slug}}.git`
 3.  Move to the appropriate directory: `cd react-boilerplate`.<br />
 4.  Run `yarn setup` in order to install dependencies and clean the git repo.<br />
     _At this point you can run `yarn start` to see the example app at `http://localhost:3000`._
