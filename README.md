@@ -1,7 +1,7 @@
-# cookiecutter-react
+# cookiecutter-frontend
 
 Cookiecutter for React Applications
 
 ```bash
-cookiecutter https://github.com/djstein/cookiecutter-react.git
+cookiecutter https://github.com/djstein/cookiecutter-frontend.git
 ```
