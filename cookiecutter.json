@@ -8,7 +8,7 @@
   "github_user": "djstein",
   "email": "{{ cookiecutter.author_name.lower()|replace(' ', '-') }}@ncsu.edu",
   "region": "us-east-1",
-  "s3_bucket_frontend": "",
+  "s3_bucket_frontend": "{{cookiecutter.project_slug}}",
   "open_source_license": [
     "MIT",
     "BSD",
