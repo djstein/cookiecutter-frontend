@@ -20,3 +20,4 @@ deploy:
   skip_cleanup: true
   local_dir: build
   acl: public_read
+  region: {{cookiecutter.region}}
